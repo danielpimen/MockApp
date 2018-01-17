@@ -14,5 +14,24 @@
        // We store all of the retrieved data inside of an object called "response"
        .done(function(response) {
        	console.log(response);
-       	$('#currentTemp').html('The Current Temperature is: ' + response.main.temp);
+       	$('#currentTemp').html('The Current Temperature is: ' + response.main.temp );
        });
+
+   /*MARTA API Code*/
+   var APIKey2 = '5f43c2ba-8824-4e1f-aece-ab17d3887188';
+
+   var queryURL2 = 'http://developer.itsmarta.com/RealtimeTrain/RestServiceNextTrain/GetRealtimeArrivals?apikey=' +APIKey2; 
+
+   $.ajax({
+   		url:queryURL2,
+   		method: 'GET'
+
+   })
+   .done(function(response){
+   	console.log(response);
+    var results=response;
+  for (var i = 0; i < results.length; i++) {
+      console.log('hello');
+  }
+
+   })
