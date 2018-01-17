@@ -14,12 +14,30 @@ i{
 }
 h1, h3{
 	font-family: 'Permanent Marker', cursive;
+	margin: auto;
+}
+.martaTitle{
+	color:black;
 }
 hr{
 	border-color:black;
 	width:100%;
 	height:10px;
+
 }
+
+
+.large-2{
+	background-color: #225470;
+	opacity:.55;
+}
+
+
+
+
+
+
+
 *{
   box-sizing: border-box;
 }
@@ -106,6 +124,7 @@ body{
   background:#333;
   color:#fff;
 }
+
 
 @media(max-width:960px){
   .container{
