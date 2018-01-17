@@ -31,7 +31,7 @@
    	console.log(response);
     var results=response;
   for (var i = 0; i < results.length; i++) {
-      console.log('hello');
+      console.log(results[i]);
   }
 
    })
